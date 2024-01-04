@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/TESDA-Logo-official.ico" sizes="32x32" type="image/png">
     <title>Sec Teng Dashboard</title>
+
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
         body {
@@ -16,6 +20,8 @@
         .svg-container {
             display: flex;
             justify-content: flex-end; /* This aligns items to the right */
+            margin-right: 5%;
+            padding: 2%;
         }
 
         .philippineMap {
@@ -26,6 +32,46 @@
     </style>
 </head>
 <body>
+
+ <!-- Bootstrap navigation bar -->
+ <nav class="navbar navbar-expand-lg navbar-light navbar-transparent fixed-top">
+    <a class="navbar-brand font-weight-bold" href="#">Sec Teng</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link font-weight-bold" href="index.html">MAIN PAGE<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            REGIONS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="regions/CAR.html">CAR</a>
+            <a class="dropdown-item" href="regions/NCR.html">NCR</a>
+            <a class="dropdown-item" href="regions/region-1.html">Region I</a>
+            <a class="dropdown-item" href="regions/region-2.html">Region II</a>
+            <a class="dropdown-item" href="regions/region-3.html">Region III</a>
+            <a class="dropdown-item" href="regions/region-4A.html">Region IV-A</a>
+            <a class="dropdown-item" href="regions/region-4B.html">Region IV-B</a>
+            <a class="dropdown-item" href="regions/region-5.html">Region V</a>
+            <a class="dropdown-item" href="regions/region-6.html">Region VI</a>
+            <a class="dropdown-item" href="regions/region-7.html">Region VII</a>
+            <a class="dropdown-item" href="regions/region-8.html">Region VIII</a>
+            <a class="dropdown-item" href="regions/region-9.html">Region IX</a>
+            <a class="dropdown-item" href="regions/region-10.html">Region X</a>
+            <a class="dropdown-item" href="regions/region-11.html">Region XI</a>
+            <a class="dropdown-item" href="regions/region-12.html">Region XII</a>
+            <a class="dropdown-item" href="regions/CARAGA.html">CARAGA</a>
+            <a class="dropdown-item" href="regions/BARMM.html">BARMM</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
     <div class="svg-container">
         <div class="philippineMap">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 869.61 1208.1">
@@ -182,29 +228,14 @@
                       fill: #5b0000;
                     }
 
-                    #CAR:hover {
+                    #NCR, #CAR, #regionI, #regionII, #regionIII, #region4A, #region4B, #regionV, #regionVI, #regionVII, #regionVIII, #regionIX, #regionX, #regionXI, #regionXII, #CARAGA, #BARMM:hover {
                         cursor: pointer;
                     }
 
-                    #CAR {
+                    #NCR, #CAR, #regionI, #regionII, #regionIII, #region4A, #region4B, #regionV, #regionVI, #regionVII, #regionVIII, #regionIX, #regionX, #regionXI, #regionXII, #CARAGA, #BARMM {
                         text-decoration: underline;
                     }
 
-                    #regionI:hover {
-                        cursor: pointer;
-                    }
-
-                    #regionI {
-                        text-decoration: underline;
-                    }
-
-                    #regionII:hover {
-                        cursor: pointer;
-                    }
-
-                    #regionII {
-                        text-decoration: underline;
-                    }
                   </style>
                 </defs>
                 <g id="Philippine_Regions_Map" data-name="Philippine Regions Map">
@@ -326,34 +357,34 @@
                 <text class="cls-13" id="regionI" transform="translate(113.14 217.87)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N I</tspan></text>
                 <line class="cls-5" x1="363.3" y1="290.42" x2="427.35" y2="290.42"/>
                 <text class="cls-13" id="regionII" transform="translate(427.35 299)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N II</tspan></text>
-                <text class="cls-13" transform="translate(132.73 624.9)"><tspan x="0" y="0">MI</tspan><tspan class="cls-27" x="28.48" y="0">M</tspan><tspan x="49.25" y="0">A</tspan><tspan class="cls-24" x="66.74" y="0">R</tspan><tspan class="cls-27" x="83.81" y="0">O</tspan><tspan class="cls-17" x="100.97" y="0">P</tspan><tspan x="116.6" y="0">A</tspan></text>
-                <text class="cls-13" transform="translate(409.7 1065.4)"><tspan class="cls-31" x="0" y="0">B</tspan><tspan x="17.03" y="0">ARMM</tspan></text>
-                <text class="cls-13" transform="translate(46.94 428.7)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N III</tspan></text>
+                <text class="cls-13" id="region4B" transform="translate(132.73 624.9)"><tspan x="0" y="0">MI</tspan><tspan class="cls-27" x="28.48" y="0">M</tspan><tspan x="49.25" y="0">A</tspan><tspan class="cls-24" x="66.74" y="0">R</tspan><tspan class="cls-27" x="83.81" y="0">O</tspan><tspan class="cls-17" x="100.97" y="0">P</tspan><tspan x="116.6" y="0">A</tspan></text>
+                <text class="cls-13" id="BARMM" transform="translate(409.7 1065.4)"><tspan class="cls-31" x="0" y="0">B</tspan><tspan x="17.03" y="0">ARMM</tspan></text>
+                <text class="cls-13" id="regionIII" transform="translate(46.94 428.7)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N III</tspan></text>
                 <line class="cls-4" x1="279.7" y1="416.61" x2="197.29" y2="416.61"/>
                 <line class="cls-4" x1="314.3" y1="505.7" x2="220.65" y2="505.7"/>
-                <text class="cls-13" transform="translate(59.9 514)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N </tspan><tspan class="cls-2" x="101.69" y="0">I</tspan><tspan class="cls-31" x="109.65" y="0">V-</tspan><tspan x="137.65" y="0">A</tspan></text>
+                <text class="cls-13" id="region4A" transform="translate(59.9 514)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N </tspan><tspan class="cls-2" x="101.69" y="0">I</tspan><tspan class="cls-31" x="109.65" y="0">V-</tspan><tspan x="137.65" y="0">A</tspan></text>
                 <text class="cls-13" id="CAR" transform="translate(115.2 317.22)"><tspan class="cls-30" x="0" y="0">C</tspan><tspan x="15.91" y="0">AR</tspan></text>
                 <polyline class="cls-4" points="302.17 269.46 200.23 309.23 174.6 309.23"/>
                 <polyline class="cls-4" points="403.9 729.5 337.9 805.1 323.6 805.1"/>
-                <text class="cls-13" transform="translate(193.1 813.23)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N </tspan><tspan class="cls-28" x="101.69" y="0">V</tspan><tspan class="cls-11" x="117.66" y="0">I</tspan></text>
+                <text class="cls-13" id="regionVI" transform="translate(193.1 813.23)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N </tspan><tspan class="cls-28" x="101.69" y="0">V</tspan><tspan class="cls-11" x="117.66" y="0">I</tspan></text>
                 <polyline class="cls-4" points="583.45 948.59 397.42 877.5 360.5 877.5"/>
-                <text class="cls-13" transform="translate(234.55 885.55)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N X</tspan></text>
-                <text class="cls-13" transform="translate(612.39 479.47)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N V</tspan></text>
+                <text class="cls-13" id="regionX" transform="translate(234.55 885.55)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N X</tspan></text>
+                <text class="cls-13" id="regionV" transform="translate(612.39 479.47)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N V</tspan></text>
                 <polyline class="cls-4" points="465.05 556.2 580.08 470.98 610.4 470.98"/>
                 <polyline class="cls-4" points="571.35 1079.6 571.35 1163.3 537.35 1163.3"/>
-                <text class="cls-13" transform="translate(396.9 1171.35)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N </tspan><tspan class="cls-9" x="101.68" y="0">X</tspan><tspan x="117.27" y="0">II</tspan></text>
+                <text class="cls-13" id="regionXII" transform="translate(396.9 1171.35)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N </tspan><tspan class="cls-9" x="101.68" y="0">X</tspan><tspan x="117.27" y="0">II</tspan></text>
                 <line class="cls-4" x1="654.1" y1="989.1" x2="742.71" y2="989.1"/>
-                <text class="cls-13" transform="translate(744.9 997.05)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N </tspan><tspan class="cls-9" x="101.68" y="0">X</tspan><tspan x="117.27" y="0">I</tspan></text>
+                <text class="cls-13" id="regionXI" transform="translate(744.9 997.05)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N </tspan><tspan class="cls-9" x="101.68" y="0">X</tspan><tspan x="117.27" y="0">I</tspan></text>
                 <line class="cls-4" x1="641.2" y1="920.2" x2="728" y2="920.2"/>
-                <text class="cls-13" transform="translate(730.63 928.14)"><tspan class="cls-30" x="0" y="0">C</tspan><tspan class="cls-11" x="15.91" y="0">A</tspan><tspan class="cls-20" x="33.39" y="0">R</tspan><tspan class="cls-7" x="50.33" y="0">A</tspan><tspan class="cls-30" x="66.76" y="0">G</tspan><tspan x="83.43" y="0">A</tspan></text>
-                <text class="cls-13" transform="translate(227.1 941.5)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N IX</tspan></text>
+                <text class="cls-13" id="CARAGA" transform="translate(730.63 928.14)"><tspan class="cls-30" x="0" y="0">C</tspan><tspan class="cls-11" x="15.91" y="0">A</tspan><tspan class="cls-20" x="33.39" y="0">R</tspan><tspan class="cls-7" x="50.33" y="0">A</tspan><tspan class="cls-30" x="66.76" y="0">G</tspan><tspan x="83.43" y="0">A</tspan></text>
+                <text class="cls-13" id="regionIX" transform="translate(227.1 941.5)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-27" x="58.36" y="0">O</tspan><tspan x="75.53" y="0">N IX</tspan></text>
                 <polyline class="cls-4" points="452.9 963.4 395.1 933.77 360.5 933.77"/>
                 <polyline class="cls-4" points="590.15 665 590.15 582.7 622.8 582.7"/>
-                <text class="cls-13" transform="translate(626 591.58)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-23" x="58.36" y="0">O</tspan><tspan class="cls-11" x="75.53" y="0">N </tspan><tspan class="cls-28" x="101.69" y="0">V</tspan><tspan x="117.66" y="0">III</tspan></text>
+                <text class="cls-13" id="regionVIII" transform="translate(626 591.58)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-23" x="58.36" y="0">O</tspan><tspan class="cls-11" x="75.53" y="0">N </tspan><tspan class="cls-28" x="101.69" y="0">V</tspan><tspan x="117.66" y="0">III</tspan></text>
                 <line class="cls-4" x1="495" y1="790.7" x2="702.5" y2="790.7"/>
-                <text class="cls-13" transform="translate(704.97 799.05)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N </tspan><tspan class="cls-28" x="101.68" y="0">V</tspan><tspan x="117.66" y="0">II</tspan></text>
+                <text class="cls-13" id="regionVII" transform="translate(704.97 799.05)"><tspan x="0" y="0">RE</tspan><tspan class="cls-27" x="33.74" y="0">G</tspan><tspan x="50.93" y="0">I</tspan><tspan class="cls-12" x="58.36" y="0">O</tspan><tspan class="cls-21" x="75.53" y="0">N </tspan><tspan class="cls-28" x="101.68" y="0">V</tspan><tspan x="117.66" y="0">II</tspan></text>
                 <polyline class="cls-3" points="298.5 475.6 349.35 424.75 366.75 424.75"/>
-                <text class="cls-13" transform="translate(368.48 432.6)"><tspan x="0" y="0">N</tspan><tspan class="cls-27" x="18.91" y="0">C</tspan><tspan x="35.35" y="0">R</tspan></text>
+                <text class="cls-13" id="NCR" transform="translate(368.48 432.6)"><tspan x="0" y="0">N</tspan><tspan class="cls-27" x="18.91" y="0">C</tspan><tspan x="35.35" y="0">R</tspan></text>
 
                 // START OF SCRIPTS
 
@@ -366,6 +397,16 @@
                     CAR.addEventListener('click', function() {
                       // Your click event handling code goes here
                       window.open('regions/CAR.html', "_blank");
+                    });
+
+                    /* NCR */
+                    // Get the text element by its ID
+                    var NCR = document.getElementById('NCR');
+                
+                    // Add a click event listener
+                    NCR.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/NCR.html', "_blank");
                     });
 
                     /* REGION I */
@@ -388,10 +429,144 @@
                       window.open('regions/region-2.html', "_blank");
                     });
 
+                    /* REGION III */
+                    // Get the text element by its ID
+                    var regionIII = document.getElementById('regionIII');
+                
+                    // Add a click event listener
+                    regionIII.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-3.html', "_blank");
+                    });
+
+                    /* REGION IV-A */
+                    // Get the text element by its ID
+                    var region4A = document.getElementById('region4A');
+                
+                    // Add a click event listener
+                    region4A.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-4A.html', "_blank");
+                    });
+
+                    /* REGION IV-B */
+                    // Get the text element by its ID
+                    var region4B = document.getElementById('region4B');
+                
+                    // Add a click event listener
+                    region4B.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-4B.html', "_blank");
+                    });
+
+                    /* REGION V */
+                    // Get the text element by its ID
+                    var regionV = document.getElementById('regionV');
+                
+                    // Add a click event listener
+                    regionV.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-5.html', "_blank");
+                    });
+
+                    /* REGION VI */
+                    // Get the text element by its ID
+                    var regionVI = document.getElementById('regionVI');
+                
+                    // Add a click event listener
+                    regionVI.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-6.html', "_blank");
+                    });
+
+                    /* REGION VII */
+                    // Get the text element by its ID
+                    var regionVII = document.getElementById('regionVII');
+                
+                    // Add a click event listener
+                    regionVII.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-7.html', "_blank");
+                    });
+
+                    /* REGION VIII */
+                    // Get the text element by its ID
+                    var regionVI = document.getElementById('regionVIII');
+                
+                    // Add a click event listener
+                    regionVIII.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-8.html', "_blank");
+                    });
+
+                    /* REGION IX */
+                    // Get the text element by its ID
+                    var regionIX = document.getElementById('regionIX');
+                
+                    // Add a click event listener
+                    regionIX.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-9.html', "_blank");
+                    });
+
+                    /* REGION X */
+                    // Get the text element by its ID
+                    var regionX = document.getElementById('regionX');
+                
+                    // Add a click event listener
+                    regionX.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-10.html', "_blank");
+                    });
+
+                    /* REGION XI */
+                    // Get the text element by its ID
+                    var regionXI = document.getElementById('regionXI');
+                
+                    // Add a click event listener
+                    regionXI.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-11.html', "_blank");
+                    });
+
+                    /* REGION XII */
+                    // Get the text element by its ID
+                    var regionXII = document.getElementById('regionXII');
+                
+                    // Add a click event listener
+                    regionXII.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/region-12.html', "_blank");
+                    });
+
+                    /* CARAGA */
+                    // Get the text element by its ID
+                    var CARAGA = document.getElementById('CARAGA');
+                
+                    // Add a click event listener
+                    CARAGA.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/CARAGA.html', "_blank");
+                    });
+
+                    /* BARMM */
+                    // Get the text element by its ID
+                    var BARMM = document.getElementById('BARMM');
+                
+                    // Add a click event listener
+                    BARMM.addEventListener('click', function() {
+                      // Your click event handling code goes here
+                      window.open('regions/BARMM.html', "_blank");
+                    });
                   </script>
               </svg>
         </div>
     </div>
+
+    <!-- Bootstrap JS and Popper.js scripts (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 </body>
 </html>
