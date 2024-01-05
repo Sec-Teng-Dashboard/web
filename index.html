@@ -15,9 +15,16 @@
 
     <style>
         body {
+            margin: 0;
+            padding: 0;
             background-image: url(img/bg.png);
             background-size: cover;
             background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
         html, body {     
             height: 100%;
@@ -25,8 +32,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Oswald', sans-serif;
-            font-weight: 700;
         }
 
         .container-fluid {
@@ -35,23 +40,77 @@
             padding: 10%;
         }
 
-        .logos img {
+        .logos img, .text h1 {
             width: 100%; /* Set a fixed width or height, adjust as needed */
             height: auto; /* Maintain aspect ratio */
+            margin-top: 25px;
+            font-size: 21px;
+            text-align: center;
         }
 
-        .logos img, .text h1 {
-            opacity: 1; /* Set initial opacity to 1 for visibility */
-            transition: opacity 1s ease-in-out; /* Transition property for the fade effect */
+        .text h1, .small {
+            -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 6s; /* Firefox < 16 */
+                -ms-animation: fadein 6s; /* Internet Explorer */
+                -o-animation: fadein 6s; /* Opera < 12.1 */
+                    animation: fadein 6s;
         }
 
-        .logos img.fade-in, .text h1.fade-in {
-            opacity: 1; /* Set opacity to 1 for the fully visible state */
+        /* LOGO ANIMATIONS */
+        .tesdalogo img {
+            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 2s; /* Firefox < 16 */
+                -ms-animation: fadein 2s; /* Internet Explorer */
+                -o-animation: fadein 2s; /* Opera < 12.1 */
+                    animation: fadein 2s;
+        }
+
+        .bagong-pilipinas img {
+            -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 3s; /* Firefox < 16 */
+                -ms-animation: fadein 3s; /* Internet Explorer */
+                -o-animation: fadein 3s; /* Opera < 12.1 */
+                    animation: fadein 3s;
+        }
+
+        .tuv img {
+            -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 4s; /* Firefox < 16 */
+                -ms-animation: fadein 4s; /* Internet Explorer */
+                -o-animation: fadein 4s; /* Opera < 12.1 */
+                    animation: fadein 4s;
+        }
+
+        .lingap img {
+            -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 5s; /* Firefox < 16 */
+                -ms-animation: fadein 5s; /* Internet Explorer */
+                -o-animation: fadein 5s; /* Opera < 12.1 */
+                    animation: fadein 5s;
         }
 
         .text h1{
             font-size: 5em;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
         }
+
+        #testing {
+            
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Media queries for responsiveness */
+        @media only screen and (max-width: 1366px) {
+            .text h1 {
+                font-size: 4em;
+            }
+        }
+
 
     </style>
 
@@ -97,7 +156,6 @@
     </div>
   </nav>
 
-
     <div class="container-fluid">
         <div class="row logos">
             <div class="col-3 tesdalogo">
@@ -130,16 +188,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <!-- Your JavaScript for triggering the fade-in effect -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                // Trigger the fade-in effect after the page has loaded
-                document.querySelectorAll('.fade-in').forEach(function(element) {
-                    element.classList.add('fade-in');
-                });
-            });
-        </script>
     
 </body>
 </html>
