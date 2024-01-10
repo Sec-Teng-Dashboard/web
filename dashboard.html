@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
         body {
             background-image: url(img/sectengBG.png);
@@ -29,6 +32,14 @@
             height: 40%; /* Set the desired height */
         }
 
+        .navbar-transparent-bg {
+            background-color: rgba(227, 242, 253, 0.8); /* Change the alpha value for transparency */
+        }
+
+        .navbar {
+          transition: background-color 0.3s ease; /* Add transition to the navbar */
+        }
+
         /* MAP ANIMATION */
         #Layer_1 {
             -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -37,6 +48,7 @@
                 -o-animation: fadein 3s; /* Opera < 12.1 */
                     animation: fadein 3s;
         }
+
 
         @keyframes fadein {
             from { opacity: 0; }
@@ -48,7 +60,7 @@
 <body>
 
  <!-- Bootstrap navigation bar -->
- <nav class="navbar navbar-expand-lg navbar-light navbar-transparent fixed-top">
+ <nav class="navbar navbar-expand-lg navbar-light navbar-transparent fixed-top transparent-navbar">
     <a class="navbar-brand font-weight-bold" href="index.html">Sec Teng</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -56,10 +68,10 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link font-weight-bold" href="dashboard.html">DASHBOARD<span class="sr-only">(current)</span></a>
+          <a class="nav-link font-weight-bold btn btn-sm btn-outline-info mr-1" href="dashboard.html">DASHBOARD<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle font-weight-bold btn btn-sm btn-outline-info text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             REGIONS
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -400,7 +412,7 @@
                 <polyline class="cls-3" points="298.5 475.6 349.35 424.75 366.75 424.75"/>
                 <text class="cls-13" id="NCR" transform="translate(368.48 432.6)"><tspan x="0" y="0">N</tspan><tspan class="cls-27" x="18.91" y="0">C</tspan><tspan x="35.35" y="0">R</tspan></text>
 
-                // START OF SCRIPTS
+                /* START OF SCRIPTS PER REGION */
 
                 <script type="text/javascript">
                     /* CAR */
@@ -409,7 +421,7 @@
                 
                     // Add a click event listener
                     CAR.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/CAR.html';
                     });
 
@@ -419,7 +431,7 @@
                 
                     // Add a click event listener
                     NCR.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/NCR.html';
                     });
 
@@ -429,7 +441,7 @@
                 
                     // Add a click event listener
                     regionI.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-1.html';
                     });
 
@@ -439,7 +451,7 @@
                 
                     // Add a click event listener
                     regionII.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-2.html';
                     });
 
@@ -449,7 +461,7 @@
                 
                     // Add a click event listener
                     regionIII.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-3.html';
                     });
 
@@ -459,7 +471,7 @@
                 
                     // Add a click event listener
                     region4A.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-4A.html';
                     });
 
@@ -469,7 +481,7 @@
                 
                     // Add a click event listener
                     region4B.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-4B.html';
                     });
 
@@ -479,7 +491,7 @@
                 
                     // Add a click event listener
                     regionV.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-5.html';
                     });
 
@@ -489,7 +501,7 @@
                 
                     // Add a click event listener
                     regionVI.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-6.html';
                     });
 
@@ -499,7 +511,7 @@
                 
                     // Add a click event listener
                     regionVII.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-7.html';
                     });
 
@@ -509,7 +521,7 @@
                 
                     // Add a click event listener
                     regionVIII.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-8.html';
                     });
 
@@ -519,7 +531,7 @@
                 
                     // Add a click event listener
                     regionIX.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-9.html';
                     });
 
@@ -529,7 +541,7 @@
                 
                     // Add a click event listener
                     regionX.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-10.html';
                     });
 
@@ -539,7 +551,7 @@
                 
                     // Add a click event listener
                     regionXI.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-11.html';
                     });
 
@@ -549,7 +561,7 @@
                 
                     // Add a click event listener
                     regionXII.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/region-12.html';
                     });
 
@@ -559,7 +571,7 @@
                 
                     // Add a click event listener
                     CARAGA.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/CARAGA.html';
                     });
 
@@ -569,13 +581,31 @@
                 
                     // Add a click event listener
                     BARMM.addEventListener('click', function() {
-                      // Your click event handling code goes here
+                      // Click event handling
                       window.location.href = 'regions/BARMM.html';
                     });
                   </script>
               </svg>
         </div>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        // Add transparent class on page load if scrolled down
+        if ($(window).scrollTop() > 50) {
+          $(".navbar").addClass("navbar-transparent-bg");
+        }
+    
+        // Add transparent class on scroll
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $(".navbar").addClass("navbar-transparent-bg");
+          } else {
+            $(".navbar").removeClass("navbar-transparent-bg");
+          }
+        });
+      });
+    </script>
 
     <!-- Bootstrap JS and Popper.js scripts (required for Bootstrap components) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
